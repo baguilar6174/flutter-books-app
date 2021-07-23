@@ -57,6 +57,48 @@ Básicamente se ha dividido el proyecto en tres capas: principalmente las capas 
 
 Hay que tener en cuenta que tanto la capa de datos como de presentación están acopladas a la de dominio. Esto permite, cambiar de manera sencilla la fuente de datos o la interfaz gráfica (siempre que el dominio se mantenga).
 
+# Estructura de archivos
+
+```
+├── android/
+├── ios/
+├── lib/
+    ├── app/
+    │   ├── core/
+    │   │   ├── errors/
+    │   │   │   ├── exceptions.dart
+    │   │   │   ├── failure.dart
+    │   │   ├── theme/
+    │   │   │   ├── colors.dart
+    │   ├── data/
+    │   │   ├── repositories_impl/
+    │   │   ├── models/
+    │   │   ├── datasources/
+    │   │   │   ├── local/
+    │   │   │   ├── network/
+    │   ├── device/
+    │   ├── dependency_injection/
+    │   ├── domain/
+    │   │   ├── entities/
+    │   │   ├── repositories/
+    │   │   ├── services/
+    │   │   ├── usecases/
+    │   ├── ui/
+    │   │   ├── pages/
+    │   │   │   ├── page1/
+    │   │   │   │   ├── widgets/
+    │   │   │   │   ├── page1_page.dart
+		...
+    │   │   ├── widgets/
+    │   │   ├── routes/
+    │   │   │   ├── app_routes.dart
+    │   │   │   ├── routes.dart
+    │   └── my_app.dart
+    └── main.dart
+...
+└── pubspec.yaml
+```
+
 ## Books App
 
 <br>
