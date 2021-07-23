@@ -46,10 +46,6 @@ flutter pub get
 
 # Arquitectura del proyecto
 
-![Architecture idea](https://github.com/bryanAguilar001/flutter-books-app/blob/main/media/layers_clean_architecture.png?raw=true)
-
-> Clean Architecture idea
-
 ![Project Architecture](https://github.com/bryanAguilar001/flutter-books-app/blob/main/media/architecture.png?raw=true)
 
 > Project Architecture
