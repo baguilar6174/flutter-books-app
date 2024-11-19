@@ -1,63 +1,63 @@
 # Books App
 
-Esta aplicación ha sido creada usando [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) y Cubit para la gestión del estado. Esta sencilla aplicación consume datos de la ApiRest [Faker Api](https://fakerapi.it/en) para mostrar libros (fake) de manera aleatoria. La interfaz presentada es sencilla ya que se han concentrado los esfuerzos en crear una arquitectura y estructura de directorios flexible y escalable.
+This application was created using [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) and Cubit for state management. This simple app consumes data from the [Faker Api](https://fakerapi.it/en) REST API to display randomly generated (fake) books. The presented interface is minimal as efforts were concentrated on creating a flexible and scalable architecture and directory structure.
 
-# Autor
+# Author
 
-Este proyecto ha sido basado en el [repositorio](https://github.com/deus-magna/clean_books) de [@deus-magna](https://github.com/deus-magna).
+This project was based on the [repository](https://github.com/deus-magna/clean_books) by [@deus-magna](https://github.com/deus-magna).
 
-## Cómo usar
+## How to Use
 
-Esta aplicación ha sido creada con Flutter en su versión `2.2.3` y Dart en su versión `2.13.4`,
+This application was built with Flutter version `2.2.3` and Dart version `2.13.4`.
 
-Paso 1:
+Step 1:
 
-Descargar o clonar este repositorio con el siguiente comando
+Download or clone this repository with the following command:
 
 ```
-git clone https://github.com/bryanAguilar001/flutter-books-app.git
+git clone https://github.com/baguilar6174/flutter-books-app.git
 ```
 
-Paso 2
+Step 2:
 
-En la raíz del proyecto ejecute el siguiente comando en la consola para obtener las dependencias necesarias:
+At the project root, run the following command in the console to get the necessary dependencies:
 
 ```
 flutter pub get
 ```
 
-## Características
+## Features
 
-- La aplicación ha sido estructurada siguiendo Clean Architecture
-- Consumo de una ApiRest
-- Muestra información en una interfaz sencilla
-- Es adaptable a dispositivos desktop, tablet y mobile
-- Ha sido creada usando el gestor de estados Cubit
+- The app follows Clean Architecture principles.
+- Consumes a REST API.
+- Displays information through a minimal interface.
+- Adaptable to desktop, tablet, and mobile devices.
+- Built using the Cubit state management system.
 
-## Librerías & Paquetes usados
+## Libraries & Packages Used
 
-- `equatable: ^2.0.3`: Permite hacer una comparación de objetos en un nivel profundo (amigable con testing).
-- `dartz: ^0.10.0-nullsafety.2`: Provee función de enviar un modelo y una excepción en un mismo encapsulado. Esto permite el control y manipulación de errores.
-- `http: ^0.13.3`: Permite realizar peticiones http
-- `bloc: ^7.0.0`: Manejo de estado con Cubit
-- `flutter_bloc: ^7.0.1`: Manejo de estado con Cubit
-- `responsive_builder: ^0.4.1`: Permite controlar la parte responsiva de la interfaz de usuario.
-- `get_it: ^7.2.0`: Para realizar la inyección de dependencias
+- `equatable: ^2.0.3`: Allows deep object comparison (testing-friendly).
+- `dartz: ^0.10.0-nullsafety.2`: Provides functionality for sending a model and an exception within the same encapsulation, enabling error control and handling.
+- `http: ^0.13.3`: Enables HTTP requests.
+- `bloc: ^7.0.0`: State management with Cubit.
+- `flutter_bloc: ^7.0.1`: State management with Cubit.
+- `responsive_builder: ^0.4.1`: Facilitates responsive UI control.
+- `get_it: ^7.2.0`: Dependency injection management.
 
-# Arquitectura del proyecto
+# Project Architecture
 
-![Project Architecture](https://github.com/bryanAguilar001/flutter-books-app/blob/main/media/architecture.png?raw=true)
+![Project Architecture](./media/architecture.png)
 
 > Project Architecture
 
-Básicamente se ha dividido el proyecto en tres capas: principalmente las capas de `data`, `domain` y `ui`.
-1. La capa de `ui` contiene todo lo relacionado a la interfaz de usuario. Aquí se maneja el gestor de estados para controlar acciones como animaciones, transiciones acciones de botones, etc.
-2. En la capa de `domain` se manejan los casos de uso, se pueden ver como las tareas, feature o historias de usuario. Aquí se encuentran las entidades o modelos de los datos que permiten el uso y transferencia de datos.
-3. En la capa de `data` se implementa el patrón `repository` que nos ayuda a tener un gestor de datos para controlar la recepción de información de diversas fuentes. Estas fuentes de datos se denominan `datasources` que se encargan de obtener la información de distintas fuentes (locales o remotos).
+The project is divided into three main layers: `data`, `domain`, and `ui`.
+1. The `ui` layer contains everything related to the user interface. This layer handles state management to control actions like animations, button transitions, etc.
+2. The `domain` layer handles use cases, which can be considered tasks, features, or user stories. Here you will find data entities or models that facilitate data usage and transfer.
+3. The `data` layer implements the `repository` pattern, serving as a data manager to control the reception of information from various sources. These data sources, called `datasources`, retrieve information from different sources (local or remote).
 
-Hay que tener en cuenta que tanto la capa de datos como de presentación están acopladas a la de dominio. Esto permite, cambiar de manera sencilla la fuente de datos o la interfaz gráfica (siempre que el dominio se mantenga).
+It is important to note that both the data and presentation layers are coupled to the domain layer. This makes it easier to change the data source or graphical interface, as long as the domain remains unchanged.
 
-# Estructura de archivos
+# File Structure
 
 ```
 ├── android/
@@ -107,7 +107,13 @@ Hay que tener en cuenta que tanto la capa de datos como de presentación están 
     <td>Main Screen</td>
   </tr>
   <tr>
-    <td align="center" valign="center"><img src="https://github.com/bryanAguilar001/flutter-books-app/blob/main/media/books_detail.png?raw=true" width="40%"></td>
+    <td align="center" valign="center"><img src="./media/books_detail.png" width="40%"></td>
   </tr>
  </table>
 <br>
+
+## Stay in touch
+
+- Website - [www.bryan-aguilar.com](https://www.bryan-aguilar.com/)
+- Medium - [baguilar6174](https://baguilar6174.medium.com/)
+- LinkedIn - [baguilar6174](https://www.linkedin.com/in/baguilar6174)
